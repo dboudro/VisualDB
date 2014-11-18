@@ -67,7 +67,7 @@ body {
 }
 
 #modal-container {
-  margin: 150px 10%;
+  margin: 64px 10%;
   position: absolute;
   width: 80%;
   height: 1150px;
@@ -150,7 +150,7 @@ padding: 15px 16px;
 }
 .example-text {
   color:  #C5EFF7;
-  font-size: 1.2em;
+  font-size: 1.1em;
   line-height: 2em;
   font-family: Libre Regular;
   width: 294px;

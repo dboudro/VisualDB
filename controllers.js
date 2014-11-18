@@ -1,5 +1,5 @@
 
-var Controllers = angular.module('Controllers', []);
+var Controllers = angular.module('Controllers', ['ngDialog']);
 
 
     Controllers.controller('myFirstCtrl', function ($scope) {
@@ -79,4 +79,10 @@ $scope.filterByNew = function() {
   }
 
   });
+
+Controllers.controller('modalController', function ($scope, ngDialog) {
+    $scope.clickToOpen = function () {
+        ngDialog.open({ template: 'modal.html' });
+    };
+});
 

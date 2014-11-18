@@ -24,9 +24,13 @@
 <div id="navigation"> 
           <core-header-panel>
           <core-toolbar>
-          <a href="/modal.html"><img src="img/read.png" id="read"></a>
+          <div ng-controller="modalController">
+<a ng-click="clickToOpen()"><img src="img/read.png" id="read"></a>
+</div>
+          
  <!-- - - - - - - - - - - - - - - - - - MODAL - - - - - - - - - - - - - - - - - - -->  
-
+  <script src="bower_components/ngDialog/js/ngDialog.js"></script>
+   <link rel="stylesheet" type="css" href="bower_components/ngDialog/css/ngDialog.css">
  <!-- - - - - - - - - - - - - - - - - - MODAL END - - - - - - - - - - - - - - - - - - --> 
           <paper-tabs class="pink" id="tabs" selected="all" self-end>
           <paper-tab class="pink" name="tools">TOOLS</paper-tab>
@@ -60,7 +64,7 @@
         <div class="seperator"></div>
     <!-- RESULTS BEGIN HERE -->
     <div id="results-container">
-      <div class="item" ng-repeat="item in items | filter:searchMethod" ng-animate=" 'animate' "> 
+      <div class="item" ng-repeat="item in items | filter:searchMethod"> 
         <img ng-src="{{item.image}}">
            <div class="seperator" id="result-item-seperator"></div>
         <h2> {{item.name}}</h2>
