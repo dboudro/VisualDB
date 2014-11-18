@@ -12,6 +12,7 @@
   "dependencies": {
     "core-elements": "Polymer/core-elements#~0.5.1",
     "paper-elements": "Polymer/paper-elements#~0.5.1",
-    "angular-modal-service": "~0.4.0"
+    "angular-modal-service": "~0.4.0",
+    "ngDialog": "~0.3.4"
   }
 }
