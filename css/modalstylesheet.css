@@ -1,6 +1,7 @@
 /* * * * * * * * SETUP STYLES * * * * * * * */
 body {
 	padding: none;
+  background-color: #333;
   font-size: 10px;
 }
 @font-face {
@@ -34,10 +35,12 @@ span {
 }
 
 #modal-container {
+  margin: 50px 10%;
   position: absolute;
   width: 80%;
-  height: 750px;
+  height: 950px;
   background-color: #3A539B;
+
 }
  h3 {
   font-size: 2em;
@@ -46,6 +49,8 @@ span {
   color: #A2DED0;
 }
 
+
+
 #header-banner {
   margin-top: 40px;
   width: 100%;
@@ -53,6 +58,7 @@ span {
   background-color: #1BA39C;
   color: white;
   border-bottom: 1px solid #6A82C8;
+    margin-bottom: 60px;
 }
 #header-banner h1 {
   padding-top: 5%;
@@ -61,4 +67,42 @@ span {
   font-family:  Monte;
 }
 /* * * * * * * * POST BANNER * * * * * * * */
+#post-header {
+  width: 100%;
+}
+#what-to-do {
+  margin: 0px auto;
+  text-align: center;
+  display: table;
+  font-family: Monte;
+  color: white;
+    padding:5px 10px;
+  background-color: rgba(107, 185, 240,.2);
+  border: 1px solid rgba(107, 185, 240,.2);
+  border-radius: 8px;
+}
 
+#arrow {
+  display: table;
+  margin: 60px auto;
+  text-align: center;
+  height: 32px;
+  width: 32px;
+  opacity: .2;
+}
+.seperator {
+  margin: 25px auto;
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  opacity: .1;
+}
+#examples-container {
+  padding: 1px 0px;
+  height: 200px;
+  background-color:  rgba(75, 119, 190,.3)
+}
+.example {
+  margin-left: 8px;
+padding: 15px 10px;
+}
