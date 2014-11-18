@@ -1,0 +1,17 @@
+{
+  "name": "Visual DB",
+  "version": "0.0.0",
+  "description": "Data Visualization DB",
+  "main": "index.html",
+  "authors": [
+    "Dylan Boudro"
+  ],
+  "license": "MIT",
+  "homepage": "http://dylanboudro.com",
+  "private": true,
+  "dependencies": {
+    "core-elements": "Polymer/core-elements#~0.5.1",
+    "paper-elements": "Polymer/paper-elements#~0.5.1",
+    "angular-modal-service": "~0.4.0"
+  }
+}

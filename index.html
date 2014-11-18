@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html ng-app="VDBApp">
+  <head>
+  <!--- MODAL SERVICES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+      <script src="app.js"></script>
+  <script src="controllers.js"></script>
+
+
+  <link rel="stylesheet" type="css" href="stylesheet.css">
+
+<!-- - - - - - - - - - - POLYMER COMPONENTS - - - - - - - - - - -->  
+<script src="bower_components/webcomponentsjs/webcomponents.js">
+    </script>
+    <link rel="import"
+      href="bower_components/core-header-panel/core-header-panel.html">
+    <link rel="import"
+        href="bower_components/core-toolbar/core-toolbar.html">
+    <link rel="import"
+          href="bower_components/paper-tabs/paper-tabs.html">
+<!-- - - - - - - - - - POLYMER COMPONENTS END - - - - - - - - - -->  
+  </head>
+  <body ng-controller="myFirstCtrl">
+<div id="navigation"> 
+          <core-header-panel>
+          <core-toolbar>
+          <img src="img/read.png" id="read">
+ <!-- - - - - - - - - - - - - - - - - - MODAL - - - - - - - - - - - - - - - - - - -->  
+
+ <!-- - - - - - - - - - - - - - - - - - MODAL END - - - - - - - - - - - - - - - - - - --> 
+          <paper-tabs class="pink" id="tabs" selected="all" self-end>
+          <paper-tab class="pink" name="tools">TOOLS</paper-tab>
+          <paper-tab class="pink" name="graphics">GRAPHICS</paper-tab>
+          <paper-tab class="pink"disableDrag="true" name="graphics">...</paper-tab>
+          </paper-tabs>
+          
+          </core-toolbar>
+          <!-- main page content will go here -->
+          </core-header-panel>
+</div>
+
+    <h1>Visual DB</h1>
+    <div id="search-container">
+         <input type="text" placeholder="" ng-model="searchMethod" class="input-styling" id="main-search" />
+      <div id="button-container">
+      <button> Prototyping </button>
+       <button ng-click="filterByPopularity()"> Popular</button>
+       <button ng-click="filterByNew()"> New</button>    
+       <button ng-click="filterByJavascript()"> javascript</button>
+       <button ng-click="filterByRealtime()"> real-time</button>
+       <button ng-click="filterBySVG()"> SVG</button>
+       <button ng-click="filterBySpatial()"> spatial</button>
+       <button ng-click="filterByNetwork()"> networks</button>
+       <button ng-click="filterByColor()"> color</button>
+       <button ng-click="filterByDataFocused()"> data focused</button>
+       <button ng-click="filterByFinancial()"> financial</button>
+      </div>
+    </div>
+    
+        <div class="seperator"></div>
+    <!-- RESULTS BEGIN HERE -->
+    <div id="results-container">
+      <div class="item" ng-repeat="item in items | filter:searchMethod" ng-animate=" 'animate' "> 
+        <img ng-src="{{item.image}}">
+           <div class="seperator" id="result-item-seperator"></div>
+        <h2> {{item.name}}</h2>
+      </div>
+    </div>
+
+
+          <script>
+  /* * * * * * * * * PAPER TABS * * * * * * * * */
+  var tabs = document.querySelector('paper-tabs');
+
+  tabs.addEventListener('core-select', function() {
+    console.log("Selected: " + tabs.selected);
+  });
+  /* * * * * * * * * * * * * * * * * * * * * * * */
+
+
+</script>
+  </body>
+</html>
