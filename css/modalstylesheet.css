@@ -18,13 +18,17 @@ body {
   src: url("../fonts/Montserrat-Bold.ttf");
 }
 /* * * * * * * * HOMELESS STYLES * * * * * * * */
-span {
+.span-genius {
   padding:1px 5px 1px 5px;
   background-color: rgba(0,0,0,.1);
 }
  .small {
   padding:1px 2px 1px 2px;
   background-color: rgba(0,0,0,.1);
+}
+.large-text {
+  font-size: 2em;
+  color: white;
 }
 
 .color-white {
@@ -35,10 +39,10 @@ span {
 }
 
 #modal-container {
-  margin: 50px 10%;
+  margin: 150px 10%;
   position: absolute;
   width: 80%;
-  height: 950px;
+  height: 1150px;
   background-color: #3A539B;
 
 }
@@ -47,6 +51,10 @@ span {
   font-family: Monte Bold;
   text-align: center;
   color: #A2DED0;
+}
+
+#header-container {
+ padding-top: 5%;
 }
 
 
