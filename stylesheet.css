@@ -41,12 +41,16 @@ p {
 
 /*------*/
 @font-face {
-  font-family: visitor1;
-  src: url(fonts/visitor1.ttf);
+  font-family: League Gothic Regular;
+  src: url(fonts/LeagueGothic-Regular.otf);
 }
 @font-face {
-  font-family: visitor2;
-  src: url(fonts/visitor2.ttf);
+  font-family: Monte;
+  src: url(fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Monte Bold;
+  src: url(fonts/Montserrat-Bold.ttf);
 }
 
 
