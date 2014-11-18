@@ -5,8 +5,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
       <script src="app.js"></script>
   <script src="controllers.js"></script>
+<link rel="shortcut icon" href="img/favicon.ico" />
 
-
+  <link rel="stylesheet" type="css" href="stylesheet.css">
   <link rel="stylesheet" type="css" href="stylesheet.css">
 
 <!-- - - - - - - - - - - POLYMER COMPONENTS - - - - - - - - - - -->  
@@ -25,7 +26,10 @@
           <core-header-panel>
           <core-toolbar>
           <div ng-controller="modalController">
-<a ng-click="clickToOpen()"><img src="img/read.png" id="read"></a>
+          <div id="learn-container" ng-click="clickToOpen()">
+<a><img src="img/learn.png" id="book"></a>
+<h3 id="learn-more"> Learn More</h3>
+</div>
 </div>
           
  <!-- - - - - - - - - - - - - - - - - - MODAL - - - - - - - - - - - - - - - - - - -->  
@@ -35,7 +39,7 @@
           <paper-tabs class="pink" id="tabs" selected="all" self-end>
           <paper-tab class="pink" name="tools">TOOLS</paper-tab>
           <paper-tab class="pink" name="graphics">GRAPHICS</paper-tab>
-          <paper-tab class="pink"disableDrag="true" name="graphics">...</paper-tab>
+         
           </paper-tabs>
           
           </core-toolbar>
@@ -64,11 +68,18 @@
         <div class="seperator"></div>
     <!-- RESULTS BEGIN HERE -->
     <div id="results-container">
-      <div class="item" ng-repeat="item in items | filter:searchMethod"> 
+    <div class="big-item" ng-repeat="item in items | filter:searchMethod">
+      <div class="item"> 
+
         <img ng-src="{{item.image}}">
            <div class="seperator" id="result-item-seperator"></div>
-        <h2> {{item.name}}</h2>
+        <h2> {{item.name}} </h2>
       </div>
+      <div class="overlay">
+       <h2> {{item.name}} </h2>
+       
+        </div>
+      
     </div>
 
 

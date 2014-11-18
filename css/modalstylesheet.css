@@ -90,14 +90,14 @@ body {
 #header-banner {
   margin-top: 40px;
   width: 100%;
-  height: 24%;
+  height: 16%;
   background-color: #1BA39C;
   color: white;
   border-bottom: 1px solid #6A82C8;
     margin-bottom: 60px;
 }
 #header-banner h1 {
-  padding-top: 5%;
+  padding-top: 3%;
   font-size: 4em;
   text-align: center;
   font-family:  Monte;

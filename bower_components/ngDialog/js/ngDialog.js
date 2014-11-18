@@ -20,7 +20,7 @@
 		var defaults = this.defaults = {
 			className: 'ngdialog-theme-default',
 			plain: false,
-			showClose: true,
+			showClose: false,
 			closeByDocument: true,
 			closeByEscape: true,
 			closeByNavigation: false,
