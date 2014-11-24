@@ -66,11 +66,10 @@ p {
   display: table;
   position: absolute;
   margin-left: calc(50% - 257px);
-  margin-right: auto;
   padding: 100px 0 0 0;
   width: 515px;
   height: 200px;
-  background-color: rgba(0,0,0,.1);
+  background-color: rgba(0,0,0,0);
 }
 #particles-js h1 {
   position: relative;
@@ -85,6 +84,17 @@ p {
   font-size: 1.15em;
   width: 485px;
   margin: 0 auto;
+}
+#arrow-container {
+  position: absolute;
+  display: table;
+  margin-left: calc(50% - 24px);
+  padding-top: calc(95vh - 24px);
+
+}
+#arrow {
+  height: 48px;
+  width: 48px;
 }
 
 canvas {

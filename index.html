@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="VDBApp">
   <head>
-  <!--- MODAL SERVICES -->
+  <!--- ANGULAR DEPENDENCIES -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-      <script src="app.js"></script>
+    <script src="app.js"></script>
   <script src="controllers.js"></script>
+
+  <script src="bower_components/scrollReveal.js/scrollReveal.js"></script>
+
 <link rel="shortcut icon" href="img/favicon.ico" />
 
   <link rel="stylesheet" type="css" href="stylesheet.css">
@@ -26,21 +29,20 @@
   </head>
   <body ng-controller="myFirstCtrl">
 
-<!-- 
-         <div id="learn-container" ng-click="clickToOpen()">
-<a><img src="img/learn.png" id="book"></a>
-<h3 id="learn-more"> Learn More</h3>
-</div>
- -->
 
+<!-- - - - - - - - - - - - - - - - - - - PARTICLES BLOCK - - - - - - - - - - - - - - - - -->
 <div id="particles-js">
 
 <div id="text-block">
   
-<h1> EXPLORE DATA VIZ </h1>
- <p> Data Visualization allows us to understand collected data.  These meaningful illustrations built to communicate information are a powerful tool for extending our cognitive capabilites.  </p>
-
+<h1 data-scroll-reveal="appear from Bottom after .5s"> EXPLORE DATA VIZ </h1>
+ 
+ <p data-scroll-reveal="appear from Bottom after 1s"> Data Visualization allows us to understand collected data.  These meaningful illustrations built to communicate information are a powerful tool for extending our cognitive capabilites.  </p>
 </div>
+<div id="arrow-container">
+<a href="#search-container" class="sub-link"> <img id="arrow" src="img/arrow_full.png"> </a>
+</div>
+
  
 </div>
 
@@ -88,10 +90,30 @@
 <script src="particles.js"></script>
 
 <script>
+   // - - - - - - - - - - - - - PARTICLE OPERATIONS - - - - - - - - - - - - - - - - //
   var canvas = document.getElementsByTagName("canvas")[0];
   var ctx=canvas.getContext("2d");
  ctx.font="20px Georgia";
 ctx.fillText("Hello World!",10,50);
+
+          // - - - - - - - - - - - - - SCROLL REVEAL  - - - - - - - - - - - - - - - - //
+        window.scrollReveal = new scrollReveal();
+           // - - - - - - - - - - - - - SMOOTH SCROLLING - - - - - - - - - - - - - - - - //
+        $(function() {
+          $('a[href*=#]:not([href=#])').click(function() {
+          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+          $('html,body').animate({
+          scrollTop: target.offset().top
+          }, 900);
+          return false;
+          }
+          }
+          });
+          });
+
 </script>
   </body>
 </html>
