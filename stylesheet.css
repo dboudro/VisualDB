@@ -102,6 +102,15 @@ canvas {
   vertical-align:bottom;
 }
 
+#halfway-anchor {
+   height: 1px;
+   width: 100%;
+
+   position: absolute;
+   z-index: 3;
+}
+/* * * * * * * *  * * * * * * * * * SECOND HALF * * * * * * * * * * * * * * * */
+
 h1 {
   display: table;
   margin: 0px auto 30px auto;

@@ -2,8 +2,8 @@
 var Controllers = angular.module('Controllers', ['ngRoute']);
 
 
-    Controllers.controller('myFirstCtrl', ['$scope', '$routeParams',
-     function ($scope, $routeParams) {
+    Controllers.controller('myFirstCtrl', ['$scope', '$routeParams', '$anchorScroll',
+     function ($scope, $routeParams, $anchorScroll) {
   $scope.items = [
     
     {"name" : "D3.js", "language": "Javascript","popular":"true","new":"false","real-time": "false",
@@ -50,8 +50,9 @@ var financialFocusedFilter = { "financial-focused": "true" };
 
 
 // FILTER TRIGGERS
-$scope.filterByJavascript = function() { 
-	$scope.searchMethod = javascriptFilter;
+$scope.filterByJavascript = function(item) { 
+	return item.language[ === "Javascript";
+  console.log("filtering by Javascript");
   }
 $scope.filterByPopularity = function() { 
 	$scope.searchMethod = popularFilter;
