@@ -121,7 +121,7 @@ cursor:pointer;
   height: 102px;
   width: 550px;
   margin: 40px auto 0 auto;
-  padding: 2px 0px 40px 0px;
+  padding: 10px 0px 40px 0px;
 }
 
 .input-styling {
@@ -185,14 +185,14 @@ button:hover {
 
 .big-item {
    width: 240px;
-  height: 280px;
+  height: 200px;
   float: left;
   margin: 10px;
 }
 .item {
   position: absolute;
   width: 240px;
-  height: 280px;
+  height: 200px;
   background-color: #E4F1FE;
   float: left;
   margin: 10px;
@@ -216,7 +216,7 @@ button:hover {
 
 .overlay {
   width: 238px;
-  height: 278px;
+  height: 198px;
   position: relative;
   background-color: rgba(0,0,0,1);
   float: left;

@@ -2,7 +2,8 @@
 var Controllers = angular.module('Controllers', ['ngRoute']);
 
 
-    Controllers.controller('myFirstCtrl', ['$scope', '$routeParams', function ($scope, $routeParams) {
+    Controllers.controller('myFirstCtrl', ['$scope', '$routeParams',
+     function ($scope, $routeParams) {
   $scope.items = [
     
     {"name" : "D3.js", "language": "Javascript","popular":"true","new":"false","real-time": "false",
@@ -31,7 +32,7 @@ var Controllers = angular.module('Controllers', ['ngRoute']);
     
   ];
 
- $scope.itemName = $routeParams.itemName;
+ $scope.itemID = $routeParams.itemID;
 
   $scope.searchMethod = "";
 // by default filter by query
@@ -79,6 +80,7 @@ $scope.filterByNew = function() {
   $scope.filterByFinancial = function() { 
 	$scope.searchMethod = financialFocusedFilter;
   }
+
 
   }]);
 

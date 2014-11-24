@@ -10,16 +10,17 @@ var VDBApp = angular.module('VDBApp', [
 VDBApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/items', {
+      when('/', {
         templateUrl: 'partials/item-list.html',
         controller: 'myFirstCtrl'
       }).
-      when('/item/:itemName', {
+      when('/items/:itemID', {
         templateUrl: 'partials/item-detail.html',
         controller: 'myFirstCtrl'
       }).
+
       otherwise({
-        redirectTo: '/'
+        redirectTo: '/nothing'
       });
   }]);
 
