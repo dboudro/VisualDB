@@ -1,5 +1,6 @@
 'use strict';
 
 var VDBApp = angular.module('VDBApp', [
-  'Controllers'
+  'Controllers',
+  'ngRoute'
 ]);

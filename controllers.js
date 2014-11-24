@@ -1,5 +1,5 @@
 
-var Controllers = angular.module('Controllers', ['ngDialog']);
+var Controllers = angular.module('Controllers', []);
 
 
     Controllers.controller('myFirstCtrl', function ($scope) {
@@ -79,21 +79,5 @@ $scope.filterByNew = function() {
   }
 
   });
-var killLearnMoreHelper = function($scope) {
-document.getElementById("learn-more").style.display="none"
-}
 
-
-var killLearnMore = function($scope) {
-setTimeout(killLearnMoreHelper(), 2000);
-}
-
-
-Controllers.controller('modalController', function ($scope, ngDialog) {
-    $scope.clickToOpen = function () {
-        ngDialog.open({ template: 'modal.html' });
-        killLearnMore();
-
-    };
-});
 
