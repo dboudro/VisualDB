@@ -8,7 +8,7 @@
 <link rel="shortcut icon" href="img/favicon.ico" />
 
   <link rel="stylesheet" type="css" href="stylesheet.css">
-  <link rel="stylesheet" type="css" href="stylesheet.css">
+
 
 <!-- - - - - - - - - - - POLYMER COMPONENTS - - - - - - - - - - -->  
 <script src="bower_components/webcomponentsjs/webcomponents.js">
@@ -19,34 +19,28 @@
         href="bower_components/core-toolbar/core-toolbar.html">
     <link rel="import"
           href="bower_components/paper-tabs/paper-tabs.html">
-<!-- - - - - - - - - - POLYMER COMPONENTS END - - - - - - - - - -->  
-  </head>
-  <body ng-controller="myFirstCtrl">
-<div id="navigation"> 
-          <core-header-panel>
-          <core-toolbar>
-          <div ng-controller="modalController">
-          <div id="learn-container" ng-click="clickToOpen()">
-<a><img src="img/learn.png" id="book"></a>
-<h3 id="learn-more"> Learn More</h3>
-</div>
-</div>
-          
  <!-- - - - - - - - - - - - - - - - - - MODAL - - - - - - - - - - - - - - - - - - -->  
   <script src="bower_components/ngDialog/js/ngDialog.js"></script>
    <link rel="stylesheet" type="css" href="bower_components/ngDialog/css/ngDialog.css">
  <!-- - - - - - - - - - - - - - - - - - MODAL END - - - - - - - - - - - - - - - - - - --> 
-          <paper-tabs class="pink" id="tabs" selected="all" self-end>
-          <paper-tab class="pink" name="tools">TOOLS</paper-tab>
-          <paper-tab class="pink" name="graphics">GRAPHICS</paper-tab>
-         
-          </paper-tabs>
-          
-          </core-toolbar>
-          <!-- main page content will go here -->
-          </core-header-panel>
+  </head>
+  <body ng-controller="myFirstCtrl">
+
+<!-- 
+         <div id="learn-container" ng-click="clickToOpen()">
+<a><img src="img/learn.png" id="book"></a>
+<h3 id="learn-more"> Learn More</h3>
+</div>
+ -->
+
+<div id="particles-js">
+  <h1> EXPLORE DATA VIZ </h1>
 </div>
 
+
+
+     <!-- - - - -  TOOLTIP FOR DATA VIZ END - - - - - - - - -->
+  
     <h1>Visual DB</h1>
     <div id="search-container">
          <input type="text" placeholder="" ng-model="searchMethod" class="input-styling" id="main-search" />
@@ -82,6 +76,9 @@
       
     </div>
 
+
+<script src="http://vincentgarreau.com/particles.js/particles.js"></script>
+<script src="particles.js"></script>
 
           <script>
   /* * * * * * * * * PAPER TABS * * * * * * * * */

@@ -1,4 +1,5 @@
-body {
+
+html,body {
   margin: 0;
   padding: 0;
   font-size: 10px;
@@ -53,10 +54,10 @@ p {
   src: url(fonts/Montserrat-Bold.ttf);
 }
 
-
-#navigation {
- background-color: #CCC;
- height: 64px;
+#particles-js {
+  height: 100%vh;
+  width: 100%;
+  background-color: #1BBC9B;
 }
 
 #book {
@@ -83,7 +84,7 @@ margin-top: 7px;
 }
 h1 {
   display: table;
-  margin: 60px auto 30px auto;
+  margin: 0px auto 30px auto;
   font-family: Monte Bold;
   font-size: 3.5em;
   text-align: center;
@@ -99,7 +100,7 @@ cursor:pointer;
   background-color: #3A539B;
   height: 102px;
   width: 550px;
-  margin: 0 auto 0 auto;
+  margin: 40px auto 0 auto;
   padding: 2px 0px 40px 0px;
 }
 
