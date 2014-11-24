@@ -42,7 +42,7 @@ p {
 
 /*------*/
 @font-face {
-  font-family: League Gothic Regular;
+  font-family: League Gothic;
   src: url(fonts/LeagueGothic-Regular.otf);
 }
 @font-face {
@@ -53,35 +53,45 @@ p {
   font-family: Monte Bold;
   src: url(fonts/Montserrat-Bold.ttf);
 }
-
+/* * * * * * * * * * * PARTICLES * * * * * * * * * * */
 #particles-js {
-  height: 100%vh;
+  height: 100%;
   width: 100%;
-  background-color: #1BBC9B;
-}
-
-#book {
-height: 32px;
-width: 32px;
-margin-top: 7px;
-}
-
-#learn-container {
-  opacity: .6;
-  transition: opacity .3s;
+  background-color: #3A539B;
+  color: white;
+  text-align: center;
 
 }
-#learn-container:hover {
-  cursor: pointer;
-   opacity: 1;
+#text-block {
+  display: table;
+  position: absolute;
+  margin-left: calc(50% - 257px);
+  margin-right: auto;
+  padding: 100px 0 0 0;
+  width: 515px;
+  height: 200px;
+  background-color: rgba(0,0,0,.1);
 }
-#learn-more {
+#particles-js h1 {
+  position: relative;
+  font-family: Proxima Nova Bold;
+  font-size: 5.5em;
+  margin-bottom: -5px;
+  padding-bottom: 10px;
+}
+#particles-js p {
+  position: relative;
+  font-family: Libre Regular;
+  font-size: 1.15em;
+  width: 485px;
+  margin: 0 auto;
+}
 
-  float: right;
-  font-family: Proxima Nova;
-  padding-left: 5px;
-  margin-bottom: 5px;
+canvas {
+  display:block;
+  vertical-align:bottom;
 }
+
 h1 {
   display: table;
   margin: 0px auto 30px auto;
