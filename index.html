@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="VDBApp">
   <head>
-  <!--- ANGULAR DEPENDENCIES -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-    <script src="app.js"></script>
+  <!-- - - - - - - - - - - ANGULAR DEPENDENCIES - - - - - - - - - - -->  
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+      <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+
   <script src="controllers.js"></script>
+
 
   <script src="bower_components/scrollReveal.js/scrollReveal.js"></script>
 
@@ -48,7 +51,7 @@
 
 
 
-     <!-- - - - -  TOOLTIP FOR DATA VIZ END - - - - - - - - -->
+<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK TOP - - - - - - - - - - - - - - - - -->
   
 
     <div id="search-container">
@@ -69,26 +72,17 @@
     </div>
     
         <div class="seperator"></div>
-    <!-- RESULTS BEGIN HERE -->
-    <div id="results-container">
-    <div class="big-item" ng-repeat="item in items | filter:searchMethod">
-      <div class="item"> 
-
-        <img ng-src="{{item.image}}">
-           <div class="seperator" id="result-item-seperator"></div>
-        <h2> {{item.name}} </h2>
-      </div>
-      <div class="overlay">
-       <h2> {{item.name}} </h2>
+<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK BOTTOM - - - - - - - - - - - - - - - - -->
+     <div ng-view>
        
-        </div>
-      
-    </div>
+     </div>
+
+
+
 
 
 <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
 <script src="bower_components/particles.js"></script>
-
 <script>
    // - - - - - - - - - - - - - PARTICLE OPERATIONS - - - - - - - - - - - - - - - - //
   var canvas = document.getElementsByTagName("canvas")[0];
@@ -96,23 +90,8 @@
  ctx.font="20px Georgia";
 ctx.fillText("Hello World!",10,50);
 
-          // - - - - - - - - - - - - - SCROLL REVEAL  - - - - - - - - - - - - - - - - //
+  // - - - - - - - - - - - - - SCROLL REVEAL  - - - - - - - - - - - - - - - - //
         window.scrollReveal = new scrollReveal();
-           // - - - - - - - - - - - - - SMOOTH SCROLLING - - - - - - - - - - - - - - - - //
-        $(function() {
-          $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-          $('html,body').animate({
-          scrollTop: target.offset().top
-          }, 900);
-          return false;
-          }
-          }
-          });
-          });
 
 </script>
   </body>
