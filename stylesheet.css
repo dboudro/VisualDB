@@ -105,7 +105,6 @@ canvas {
 #halfway-anchor {
    height: 1px;
    width: 100%;
-
    position: absolute;
    z-index: 3;
 }

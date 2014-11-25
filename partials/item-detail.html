@@ -1,13 +1,55 @@
 <style> 
-#detailed-view-box {
-	height: 540px;
+#back {
+  margin-left: 76px;
+  width: 32px;
+  height: 32px;
 }
-span {
-	color: aqua;
+#stats-container {
+  position: absolute;
+  margin: 82px 0 0 32px;
+  height: 600px;
+  width: 160px;
+  background-color: rgba(0,0,0,.1);
+}
+h1, p {
+	margin-top: -10px;
+  text-align: center;
+  color: white;
+}
+#example {
+	height: 350px;
+	width: 600px;
+  margin-left: calc(50% - 300px);
+  background-color: rgba(0,0,0,.1);
+}
+#full-description-container {
+	width: 600px;
+	height: 114px;
+	margin-left: calc(50% - 300px);
+	margin-top: 24px;
+	padding-top: 32px;
+	 background-color: rgba(0,0,0,.05);
+}
+
+#links-container {
+  width: 600px;
+  height: 64px;
+  background-color: rgba(0,0,0,.1);
+  margin-bottom: 32px;
+   margin-left: calc(50% - 300px);
+   margin-top: 20px;
+
 }
 </style>
 <div id="detailed-view-box">
-<a href="##halfway-anchor"><img src="img/back.png"></a>
-<h1>  detailed view for <span>{{itemID}} </span>  loaded</h1>
+<a href="/##halfway-anchor"><img src="img/back.png" id="back"></a>
+<div id="stats-container"></div>
+<h1> {{itemID}}</h1>
+<p> A tool for creating interactive visualizations </p>
+<div id="example"></div>
+<div id="full-description-container">
+  <p> full description of teh framework goes here </p>
+</div>
+<div id="links-container"></div>
 
 </div>

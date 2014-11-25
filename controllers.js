@@ -51,7 +51,7 @@ var financialFocusedFilter = { "financial-focused": "true" };
 
 // FILTER TRIGGERS
 $scope.filterByJavascript = function(item) { 
-	return item.language[ === "Javascript";
+	return $scope.searchMethod = javascriptFilter;
   console.log("filtering by Javascript");
   }
 $scope.filterByPopularity = function() { 
