@@ -26,33 +26,20 @@
  <p data-scroll-reveal="appear from Bottom after 1.5s"> Data Visualization allows us to understand collected data.  These meaningful illustrations built to communicate information are a powerful tool for extending our cognitive capabilites.  </p>
 </div>
 <div id="arrow-container">
-<a href="/##halfway-anchor"> <img id="arrow" src="img/arrow_full.png"> </a>
+<a href="/##nav"> <img id="arrow" src="img/arrow_full.png"> </a>
 </div>
 
  
 </div>
-<div id="halfway-anchor"></div>
+
 
 
 <!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK TOP - - - - - - - - - - - - - - - - -->
-  
+  <div id="nav">
+     <input type="text" placeholder="" ng-model="query" class="input-styling" id="main-search" />
+  </div>
 
-    <div id="search-container">
-         <input type="text" placeholder="" ng-model="searchMethod" class="input-styling" id="main-search" />
-      <div id="button-container">
-      <button> Prototyping </button>
-       <button ng-click="filterByPopularity()"> Popular</button>
-       <button ng-click="filterByNew()"> New</button>    
-       <button ng-click="filterByJavascript()"> javascript</button>
-       <button ng-click="filterByRealtime()"> real-time</button>
-       <button ng-click="filterBySVG()"> SVG</button>
-       <button ng-click="filterBySpatial()"> spatial</button>
-       <button ng-click="filterByNetwork()"> networks</button>
-       <button ng-click="filterByColor()"> color</button>
-       <button ng-click="filterByDataFocused()"> data focused</button>
-       <button ng-click="filterByFinancial()"> financial</button>
-      </div>
-    </div>
+   
     
         <div class="seperator"></div>
 <!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK BOTTOM - - - - - - - - - - - - - - - - -->
@@ -66,16 +53,9 @@
 
 <script src="http://vincentgarreau.com/particles.js/particles.js"></script>
 <script src="bower_components/particles.js"></script>
+
 <script>
-   // - - - - - - - - - - - - - PARTICLE OPERATIONS - - - - - - - - - - - - - - - - //
-  var canvas = document.getElementsByTagName("canvas")[0];
-  var ctx=canvas.getContext("2d");
- ctx.font="20px Georgia";
-ctx.fillText("Hello World!",10,50);
-
-  // - - - - - - - - - - - - - SCROLL REVEAL  - - - - - - - - - - - - - - - - //
-        window.scrollReveal = new scrollReveal();
-
+ 
 </script>
   </body>
 </html>
