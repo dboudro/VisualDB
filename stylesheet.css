@@ -3,7 +3,7 @@ html,body {
   margin: 0;
   padding: 0;
   font-size: 10px;
-  background-color: #2C3E50;
+  background-color: #ECF0F1;
 }
 
 p {
@@ -63,12 +63,12 @@ p {
 
 }
 #nav {
-  height: 64px;
+  height: 54px;
   width: 100%;
-  background-color: #3A539B;
+  background-color: #049372;
   color: white;
   text-align: center;
-  border: 1px solid #446CB3
+  /*border: 1px solid #049372;*/
 
 }
 #text-block {
@@ -136,15 +136,17 @@ cursor:pointer;
 }
 
 .input-styling {
-  display: block;
-  width: 300px;
+  display: table;
+  width: 250px;
   height: 20px;
-  margin-top: 20px;
-  margin-left: calc(98% - 300px);
- border: 5px solid #3A539B;
+  margin-top: 14px;
+  margin-right: 12px;
+  float: right;
+ border: 2px solid #049372;
+ border-radius: 1px;
   outline: none;
   transition: border .2s;
- box-shadow: inset 0 0 0 1px #707070;
+ box-shadow: inset 0 0 0 1px #EEEEEE;
   outline-color: transparent;
   font-family: Proxima Nova Light;
   font-size: 1.5em;
@@ -152,41 +154,43 @@ cursor:pointer;
   padding-left: 2px;
 }
 .input-styling:focus {
- border: 5px solid rgba(135, 211, 124, 1);
+ border: 2px solid #4183D7;
  border-opacity: .5;
  appearance: none;
 }
 
 
 #button-container {
-  margin: 20px 10px;
+  margin-left: 12px;
 }
 button {
-  background-color: #2C3E50;
+  background-color: rgba(0,0,0,.12);
   border: 0px solid #777;
-  padding: 4px 8px;
-  margin: 5px;
+  padding: 4px 10px;
+  margin: 16px 5px 12px 5px;
   color: white;
-  opacity: .5;
+  opacity: .8;
+  float: left;
   font-family: Proxima Nova Light;
   border-radius: 3px;
 }
 button:hover {
-  background-color: #486684;
+  opacity: 1;
+  background-color: rgba(0,0,0,.2);
   cursor: pointer;
 }
 
 .seperator {
-  height: 1px;
-  width: 80%;
-  margin: 40px auto;
-  background-color: black;
-  opacity: .2;
+  height: 3px;
+  width: 100%;
+  margin: 0px auto;
+  background-color: #C7CED1;
 }
 #result-item-seperator {
   width: 100%;
+  height: 1px;
  margin: 2px auto 5px auto;
-  opacity: .1;
+  opacity: .8;
 }
 
 #results-container {
@@ -207,8 +211,8 @@ button:hover {
   background-color: #E4F1FE;
   float: left;
   margin: 10px;
-  border: 5px solid #red;
-  transition: border .8s;
+  border: 1px solid #DADFE1;
+  transition: border .2s;
 }
 
 .item img {
@@ -218,21 +222,20 @@ button:hover {
   z-index: 2;
 }
 .item h2 {
-  font-size: 1.2em;
+  font-size: 1.25em;
   text-align: center;
   margin-top: 0;
   font-family: Libre Regular;
-  color: #222;
+  color: #333;
 }
 
 .overlay {
   width: 238px;
   height: 198px;
   position: relative;
-  background-color: rgba(0,0,0,1);
   float: left;
   z-index: 3;
-   border: 5px solid #2C3E50;
+   border: 1px solid #EEEEEE;
   margin: 10px 10px 10px 10px;
   opacity: 0;
   transition: opacity .4s;
@@ -248,8 +251,18 @@ button:hover {
 .overlay:hover {
   opacity: 1;
   cursor: pointer;
-   border: 5px solid rgba(76,104,189,1);
+    border: 5px solid rgba(162, 222, 208, .3);
 }
+/*#overlay-bottom-block {
+  color: steelblue;
+  margin-top: 153px;
+  height: 46px;
+  width: 238px;
+  background-color: rgba(0,0,0,.95);;
+}
+#overlay-bottom-block h2 {
+padding-top: 5px;
+}*/
 
 
 /* * * * * * * * * * * POLYMER STYLING * * * * * * * * * */

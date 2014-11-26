@@ -1,8 +1,15 @@
 <style> 
 #back {
-  margin-left: 76px;
+  margin-top: 20px;
+  margin-left: 48px;
   width: 32px;
   height: 32px;
+  opacity: .8;
+  border-bottom: 
+}
+#back:hover {
+  opacity: 1;
+  border-bottom: 1px solid #000;
 }
 #stats-container {
   position: absolute;
@@ -12,7 +19,7 @@
   background-color: rgba(0,0,0,.1);
 }
 h1, p {
-	margin-top: -10px;
+	margin-top: 10px;
   text-align: center;
   color: white;
 }
@@ -38,11 +45,18 @@ h1, p {
   margin-bottom: 32px;
    margin-left: calc(50% - 300px);
    margin-top: 20px;
-
+}
+.top-bar-red {
+  display: block;
+  height: 74px;
+ background-color: rgba(218, 223, 225, .3);
 }
 </style>
 <div id="detailed-view-box">
-<a href="/##nav"><img src="img/back.png" id="back"></a>
+<div class="top-bar-red">
+  <a href="/##nav"><img src="img/back.png" id="back"></a>
+</div>
+
 <div id="stats-container"></div>
 <h1> {{itemID}}</h1>
 <p> A tool for creating interactive visualizations </p>
