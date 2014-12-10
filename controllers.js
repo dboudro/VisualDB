@@ -112,11 +112,13 @@ $scope.filterByNew = function() {
 
 
   $scope.visualActive = function() { 
-     document.getElementById("results-container").style.width="78%"
+     document.getElementById("visuals-container").style.width="80%"
+     document.getElementById("frameworks-container").style.width="20%"
   }
 
     $scope.frameworkActive = function() { 
-     document.getElementById("results-container").style.width="22%"
+     document.getElementById("frameworks-container").style.width="78%"
+     document.getElementById("visuals-container").style.width="22%"
   }
 
 

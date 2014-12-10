@@ -32,17 +32,13 @@
  
 </div>
 
-
-
-<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK TOP - - - - - - - - - - - - - - - - -->
-  <div id="nav">
-<h1 id="visual-nav-header" ng-click="visualActive()"> Visuals </h1>
-<h1 id="framework-nav-header" ng-click="frameworkActive()"> Frameworks </h1>
-  </div>
-
    
-<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK BOTTOM - - - - - - - - - - - - - - - - -->
-<div id="results-container">
+<!-- - - - - - - - - - - - - - - - - - -UNDER NAV- - - - - - - - - - - - - - - - -->
+<div id="wrapper">
+<div id="visuals-container">
+
+<h1 id="visual-header" ng-click="visualActive()"> Visuals </h1>
+
     <a href="#/items/{{item.name}}/#nav"><div class="big-item" ng-repeat="item in items | filter:query">
       <div class="item"> 
 
@@ -56,6 +52,13 @@
         </div> </a>
  
     </div>
+    </div>
+<div id="frameworks-container">
+	<h1 id="framework-header" ng-click="frameworkActive()"> Frameworks </h1>
+
+</div>
+</div>
+
 
 
 
