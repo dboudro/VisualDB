@@ -83,8 +83,17 @@ p {
   text-align: center;
   border-bottom: 3px solid #C7CED1;
   /*border: 1px solid #049372;*/
-
 }
+#nav h1 {
+float: left;
+}
+#visual-nav-header {
+  margin-left: calc(11% - 72px);
+}
+#framework-nav-header {
+  margin-left: calc(50% - 125px);
+}
+
 #text-block {
   display: table;
   position: absolute;
@@ -210,8 +219,9 @@ button:hover {
 }
 
 #results-container {
-  height: 589px;
-  margin: 0 calc(10% - 20px);
+  height: 500px;
+  background-color: green;
+  width: 22%;
 }
 #footer {
   height: 200px;
