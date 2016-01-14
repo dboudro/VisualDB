@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="VDBApp">
   <head>
-  <!-- - - - - - - - - - - ANGULAR DEPENDENCIES - - - - - - - - - - -->  
+  <!-- - - - - - - - - - - ANGULAR DEPENDENCIES - - - - - - - - - - -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
       <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
@@ -20,56 +20,66 @@
 <div id="particles-js">
 
 <div id="text-block">
-  
-<h1 data-scroll-reveal="appear from Bottom after 1s"> EXPLORE DATA VIZ </h1>
- 
- <p data-scroll-reveal="appear from Bottom after 1.5s">  Data Visualization allows us to understand collected data.  These meaningful illustrations built to communicate information are a powerful tool for extending our cognitive capabilites.  </p>
+
+<h1 data-scroll-reveal="appear from Bottom after 1s"> VisualDB </h1>
+
+ <p data-scroll-reveal="appear from Bottom after 1.5s"> A Searchable Collection of Data Visualization Resources. </p>
 </div>
 <div id="arrow-container">
 <a href="/##nav"> <img id="arrow" src="img/arrow_full.png"> </a>
 </div>
 
- 
-</div>
-
-   
-<!-- - - - - - - - - - - - - - - - - - -UNDER NAV- - - - - - - - - - - - - - - - -->
-<div id="wrapper">
-<div id="visuals-container">
-
-<h1 id="visual-header" ng-click="visualActive()"> Visuals </h1>
-
-    <a href="#/items/{{item.name}}/#nav"><div class="big-item" ng-repeat="item in items | filter:query">
-      <div class="item"> 
-
-        <img ng-src="{{item.image}}">
-           <div class="seperator" id="result-item-seperator"></div>
-      <h2> {{item.name}} </h2> 
-      </div> 
-      <div class="overlay">
-      
-       <div id="overlay-bottom-block"> </div>
-        </div> </a>
- 
-    </div>
-    </div>
-<div id="frameworks-container">
-	<h1 id="framework-header" ng-click="frameworkActive()"> Frameworks </h1>
 
 </div>
-</div>
+
+
+
+<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK TOP - - - - - - - - - - - - - - - - -->
+  <div id="nav">
+    <div id="button-container">
+     <button> Prototyping</button>
+     <button> Popular</button>
+     <button> New</button>
+     <button> Javascript</button>
+     <button> real-time</button>
+     <button> SVG</button>
+     <button> Spatial</button>
+     <button> Networks</button>
+     <button> Color</button>
+     <button> Data Focused</button>
+     <button> Financial</button>
+
+      <input type="text" placeholder="" ng-model="query" class="input-styling" id="main-search" />
+      </div>
+  </div>
+
+
+<!-- - - - - - - - - - - - - - - - - - - SEARCH BLOCK BOTTOM - - - - - - - - - - - - - - - - -->
+     <div ng-view>
+
+
+     </div>
+     <div id="footer">
+      <div id="orange-sep"></div>
+     <p> Made by <a href="http://dylanboudro.com">Dylan Boudro</a> {{item.name}}</p>
+
+      </div>
 
 
 
 
-
-
-
-<script src="http://vincentgarreau.com/particles.js/particles.js"></script>
-<script src="bower_components/particles.js"></script>
+      <!-- <script src="js/jquery-2.1.1.min.js"></script> -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+			<script src="js/jquery.firefly.js"></script>
 
 <script>
- 
+$(document).ready(function(){
+
+   $(document).ready(function() {
+	$.firefly({images : ['img/circle.png'],total : 40});
+});
+
+});
 </script>
   </body>
 </html>

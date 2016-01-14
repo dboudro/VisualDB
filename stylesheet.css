@@ -83,11 +83,8 @@ p {
   text-align: center;
   border-bottom: 3px solid #C7CED1;
   /*border: 1px solid #049372;*/
-}
-#nav h1 {
-float: left;
-}
 
+}
 #text-block {
   display: table;
   position: absolute;
@@ -212,7 +209,10 @@ button:hover {
   opacity: .8;
 }
 
-
+#results-container {
+  height: 589px;
+  margin: 0 calc(10% - 20px);
+}
 #footer {
   height: 200px;
   width: 300px;
@@ -235,99 +235,6 @@ background-color: #F5D76E;
   width: 150px;
   margin: 20px auto 16px auto;
   background-color: #446CB3;
-}
-
-/* * * * * * * * * * * * * * * * * FRAMEWORKS CONTAINER * * * * * * ** * * * * * */
-
-#wrapper {
-  width: 100%;
-  border: 0px solid black;
-  height: 600px;
-   overflow: hidden; 
-}
-#wrapper h1 {
-  font-family: Proxima Nova;
-  font-size: 3.5em;
-}
-#visuals-container {
-width: 80%;
-float: left;
-background-color: #2c3e50;
-height: 530px;
-}
-#visual-header {
-  margin-left: calc(50% - 72px);
-}
-
-
-#frameworks-container {
-width: 20%;
-height: 530px;
-overflow: hidden;
-background-color: #34495e;
-}
-
-#framework-header {
-  margin-left: calc(50% - 110px);
-}
-
-
-/* * * * * * * * * * * * * * * * * UNDER THE NAV * * * * * * ** * * * * * */
-.big-item {
-   width: 240px;
-  height: 200px;
-  float: left;
-  margin: 10px;
-  border: 0px solid black;
-}
-.item {
-  position: absolute;
-  width: 240px;
-  height: 200px;
-  background-color: #E4F1FE;
-  float: left;
-  margin: 10px;
-  border: 1px solid #DADFE1;
-  transition: border .2s;
-}
-
-.item img {
- width: 232px;
-  height: 140px;
-  margin: 4px;
-  z-index: 2;
-}
-.item h2 {
-  font-size: 1.25em;
-  text-align: center;
-  margin-top: 0;
-  font-family: Libre Regular;
-  color: #333;
-}
-
-.overlay {
-  width: 238px;
-  height: 198px;
-  position: relative;
-  float: left;
-  z-index: 3;
-   border: 1px solid #EEEEEE;
-  margin: 10px 10px 10px 10px;
-  opacity: 0;
-  transition: opacity .4s;
-}
-
-.overlay h2 {
-  font-size: 1.2em;
-  text-align: center;
-  margin-top: 5px;
-  font-family: Libre Regular;
-  color: white;
-}
-.overlay:hover {
-  opacity: 1;
-  cursor: pointer;
-    border: 5px solid  rgba(242, 120, 75,.5);
 }
 
 

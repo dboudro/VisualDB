@@ -32,34 +32,6 @@ var Controllers = angular.module('Controllers', ['ngRoute']);
     
   ];
 
-    $scope.visuals = [
-    
-    {"name" : "VISUAL1", "language": "Javascript","popular":"true","new":"false","real-time": "false",
-"SVG":"true", "spatial": "true", "network": "true", "color":"true","data-focused":"true",
-"financial-focused":"false", "image": "img/d3js.png"},
-
-    {"name" : "VIS 2", "language": "Javascript","popular":"true","new":"true","real-time": "false",
-"SVG":"false", "spatial": "true", "network": "false", "color":"true","data-focused":"false",
-"financial-focused":"false", "image": "img/chromajs.png"},
-
- {"name" : "VISUAL 3", "language": "HTML","popular":"false","new":"true","real-time": "false",
-"SVG":"false", "spatial": "false", "network": "false", "color":"true","data-focused":"false",
-"financial-focused":"false","image": "img/iwanthue.png"},
-
- {"name" : "Visual 4", "language": "Java","popular":"true","new":"false","real-time": "false",
-"SVG":"true", "spatial": "true", "network": "true", "color":"true","data-focused":"true",
-"financial-focused":"false", "image": "img/processing.png"},
-
- {"name" : "Visual 5", "language": "Javascript","popular":"false","new":"false","real-time": "false",
-"SVG":"true", "spatial": "true", "network": "true", "color":"true","data-focused":"true",
-"financial-focused":"false", "image": "img/processingjs.png"},
-
- {"name" : "Visual 6", "language": "Javascript","popular":"true","new":"true","real-time": "false",
-"SVG":"false", "spatial": "true", "network": "true", "color":"false","data-focused":"true",
-"financial-focused":"true", "image": "img/sigmajs.png"},
-    
-  ];
-
  $scope.itemID = $routeParams.itemID;
 
   $scope.searchMethod = "";
@@ -108,17 +80,6 @@ $scope.filterByNew = function() {
   }
   $scope.filterByFinancial = function() { 
 	$scope.searchMethod = financialFocusedFilter;
-  }
-
-
-  $scope.visualActive = function() { 
-     document.getElementById("visuals-container").style.width="80%"
-     document.getElementById("frameworks-container").style.width="20%"
-  }
-
-    $scope.frameworkActive = function() { 
-     document.getElementById("frameworks-container").style.width="78%"
-     document.getElementById("visuals-container").style.width="22%"
   }
 
 
